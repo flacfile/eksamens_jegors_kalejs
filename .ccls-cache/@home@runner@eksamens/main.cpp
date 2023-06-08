@@ -1,5 +1,15 @@
 #include <iostream>
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+struct Question {
+    string jautajums;
+    vector<string> atbildes;
+    vector<int> pareizasatbildes;
+};
 
 int main() {
-  std::cout << "Hello World!\n";
+  cout << "Hello World!\n";
 }
