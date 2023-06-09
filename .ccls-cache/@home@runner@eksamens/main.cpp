@@ -16,9 +16,9 @@ int main() {
       {"Kāda ir C++ funkcija, lai iegūtu maksimālo vērtību?",
        {"max()", "maxval()", "maximum()", "fmax()"},
        {0, 3}},
-      {
-
-      },
+      {"Kāda ir C++ funkcija, lai iegūtu maksimālo vērtību?",
+       {"max()", "maxval()", "maximum()", "fmax()"},
+       {0, 3}},
       // Citi jautājumu, pagaidam neizdomāja
   };
 
@@ -59,5 +59,25 @@ int main() {
                 break;
             }
         }
-  }
+// Palielina pareizo atbilžu skaitu un saglabā nepareizo jautājumu indeksu
+        if (vaiPareizi) {
+            pareizasAtbildes++;
+        } else {
+            nepareizasAtbildes.push_back(i);
+        }
+
+        cout << "\n";
+    }
+
+// Izvada rezultātus
+     cout << "Pareizi atbildēti jautājumi: " << pareizasAtbildes << "/" << jautajumi.size() <<  "\n";
+     cout << "Nepareizi atbildētie jautājumi:" <<  "\n";
+    for (int index : nepareizasAtbildes) {
+         cout << "- Jautājums " << (index + 1) << ": " << jautajumi[index].jautajums <<  "\n";
+    }
+
+    return 0;
 }
+    
+  
+
