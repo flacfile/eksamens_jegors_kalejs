@@ -13,14 +13,47 @@ struct Question {
 int main() {
   // Izveidojiet jautājumu sarakstu
   vector<Question> jautajumi = {
-      {"Kāda ir C++ funkcija, lai iegūtu maksimālo vērtību?",
+      {"Kāda ir C++ matemātiska funkcija, lai iegūtu maksimālo vērtību?",
        {"max()", "maxval()", "maximum()", "fmax()"},
        {0, 3}},
-      {"Kāda ir C++ funkcija, lai iegūtu maksimālo vērtību?",
-       {"max()", "maxval()", "maximum()", "fmax()"},
+  
+      {"Kādas no C++ matemātiskiem funkcijam, iespējams lietot bez <cmath> bibliotēkas?",
+       {"cos()", "max()", "min()", "sin()"},
+       {1, 2}},
+  
+      {"Kādas no C++ matemātiskiem funkcijam, noapaļo skaitļi?",
+       {"round()", "ceil()", "tan()", "floor()"},
+       {0, 1, 3}},
+  
+      {"Kādas no C++ matemātiskiem funkcijam, nosaka kvadratsakni un kapina pakāpe skaitļus?",
+       {"abs()", "exp()", "sqrt()", "pow()"},
+       {2, 3}},
+  
+      {"Kādas no C++ matemātiskiem funkcijam, nosaka kosinusu un sinusu?",
+       {"cos()", "sin()", "sinus()", "cosinus()"},
+       {0, 1}},
+
+      {"Lai sakt darbību ar rand() funkciju, kuras bibliotēkas vajag pievienot?",
+       {"<string>", "<vector>", "<cstdlib>", "<ctime>"},
+       {2, 3}},
+
+      {"Kadas komandas der, lai sakt darbību ar rand() funkciju",
+       {"srand(time(NULL)); ", "time(srand)(0);", "srand(time(0));", "rand(time(0));"},
+       {0, 2}},
+
+      {"Kadas komandas ir no <cmath> bibliotēkas?",
+       {"cout", "cin", "abs();", "round();"},
+       {2, 3}},
+
+        {"Kadas funckijas nav no <cmath> bibliotēkas?",
+       {"swap();", "asin();", "sqrt();", "length();"},
        {0, 3}},
-      // Citi jautājumu, pagaidam neizdomāja
-  };
+
+          {"Kadas funckijas ir <cmath> bibliotēkā?",
+       {"Lineāras funkcijas fizikā;", "Trigonometriskās funkcijas;", "Noapaļošanas un atlikuma funkcijas", "Absolūtās vērtības un zīmes funkcijas"},
+       {1, 2, 3}},
+
+};
 
   // Izveidojiet rezultātu mainīgos
   int pareizasAtbildes = 0;
@@ -29,7 +62,7 @@ int main() {
   // Iziet cauri katram jautājumam
   for (int i = 0; i < jautajumi.size(); i++) {
     cout << "Jautājums " << (i + 1) << ": " << jautajumi[i].jautajums << "\n";
-    cout << "Izvēlieties atbildi (ievadiet atbilžu numuru):"
+    cout << "Izvēlieties atbildi (ievadiet atbilžu numuru pa vienu skaitli):"
          << "\n";
 
     // Izvada atbilžu variantus
