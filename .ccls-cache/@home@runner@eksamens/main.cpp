@@ -50,7 +50,7 @@ int main() {
        {0, 3}},
 
           {"Kadas funckijas ir <cmath> bibliotēkā?",
-       {"Lineāras funkcijas fizikā;", "Trigonometriskās funkcijas;", "Noapaļošanas un atlikuma funkcijas", "Absolūtās vērtības un zīmes funkcijas"},
+       {"Lineāras funkcijas fizikā", "Trigonometriskās funkcijas", "Noapaļošanas un atlikuma funkcijas", "Absolūtās vērtības un zīmes funkcijas"},
        {1, 2, 3}},
 
 };
