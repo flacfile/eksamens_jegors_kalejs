@@ -9,8 +9,7 @@ Lietotājs atbild uz katru jautājumu 1 reizi, nesaņemot tūlītēju atbildes n
 
 ### Daramo darbu saraksts
 
-- [x] Izdarīt macību materiālā 5 programmas kodu piemērus
-- [x] Izdarīt slaidu ar avotiem
+- [x] Izdarīt macību materiālu ar 5 programmas kodu piemērus
 - [x] Izstrādāt divas no mācību procesa laikā apskatītajām UML diagrammām
 - [x] Veikta versionēšana, atbilstoši uzdevuma nosacījumiem
 - [x] Izstrādāta programmatūra (tests), kura veic lietotāja zināšanu pārbaudi
